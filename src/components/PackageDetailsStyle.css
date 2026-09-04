@@ -1,0 +1,167 @@
+.package-details {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 5%;
+}
+
+.package-hero img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.package-content {
+  margin-top: 2.5rem;
+}
+
+.package-content h1 {
+  font-size: 2.8rem;
+  color: #14532d;
+  margin-bottom: 1rem;
+}
+
+.package-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f8fafc;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.package-section {
+  margin-bottom: 2.5rem;
+}
+
+.package-section h2 {
+  color: #14532d;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.package-section h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #f59e0b;
+  display: block;
+  margin-top: 8px;
+  border-radius: 20px;
+}
+
+.package-section p {
+  color: #555;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.package-section ul {
+  margin-top: 1rem;
+  padding-left: 1.3rem;
+}
+
+.package-section li {
+  margin-bottom: 12px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.package-lists {
+  display: flex;
+  gap: 30px;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.included,
+.excluded {
+  flex: 1;
+  min-width: 320px;
+  padding: 1.8rem;
+  border-radius: 14px;
+}
+
+.included {
+  background: #ecfdf5;
+  border-left: 6px solid #16a34a;
+}
+
+.excluded {
+  background: #fef2f2;
+  border-left: 6px solid #dc2626;
+}
+
+.included h2,
+.excluded h2 {
+  margin-bottom: 1rem;
+  color: #14532d;
+}
+
+.included ul,
+.excluded ul {
+  padding-left: 1.2rem;
+}
+
+.included li,
+.excluded li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 14px 36px;
+  background: #f59e0b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #d97706;
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 850px) {
+  .package-details {
+    margin: 2rem auto;
+  }
+
+  .package-hero img {
+    height: 300px;
+  }
+
+  .package-content h1 {
+    font-size: 2rem;
+  }
+
+  .package-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .package-lists {
+    flex-direction: column;
+  }
+
+  .included,
+  .excluded {
+    min-width: 100%;
+  }
+
+  .package-section h2 {
+    font-size: 1.6rem;
+  }
+}

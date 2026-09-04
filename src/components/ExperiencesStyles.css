@@ -1,0 +1,129 @@
+.experiences-section {
+  width: 90%;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.experiences-section h2 {
+  font-size: 2.6rem;
+  color: #166534;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.experiences-section h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: #f59e0b;
+  margin: 10px auto 0;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+.experiences-section h2:hover::after {
+  width: 120px;
+}
+
+.experiences-section > p {
+  width: 75%;
+  margin: 0 auto 3.5rem;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.experience-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+}
+
+.experience-image {
+  overflow: hidden;
+}
+
+.experience-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.experience-card:hover .experience-image img {
+  transform: scale(1.08);
+}
+
+.experience-content {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.experience-content h3 {
+  color: #166534;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  transition: 0.3s ease;
+}
+
+.experience-content h3:hover {
+  color: #f59e0b;
+}
+
+.experience-description {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.experience-btn {
+  background: #166534;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.experience-btn:hover {
+  background: #f59e0b;
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 992px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experiences-section > p {
+    width: 100%;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-content {
+    text-align: center;
+  }
+}
